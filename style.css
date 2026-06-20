@@ -118,6 +118,36 @@ header h2 {
     font-size: 0.95rem;
 }
 
+.notice {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #a855f7;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    animation: fadeIn 1s ease-out 0.8s both;
+}
+
+.notice p {
+    font-size: 1.15rem;
+    color: var(--text-main);
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.notice p:last-child {
+    margin-bottom: 0;
+}
+
+.highlight {
+    font-weight: 700;
+    color: #fca5a5; /* Using a brighter color that contrasts well on dark backgrounds */
+}
+
 footer {
     text-align: center;
     color: var(--text-muted);
