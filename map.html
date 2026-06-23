@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>見證架地點 - 2026年高雄國際大會</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0f172a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            font-family: sans-serif;
+        }
+        .notice {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            width: 100%;
+            font-size: 1.1rem;
+            box-sizing: border-box;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .map-container {
+            width: 100%;
+            max-width: 1000px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .map-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="notice">
+        💡 點擊下方地圖即可返回首頁 (Click map to go back)
+    </div>
+    
+    <div class="map-container">
+        <!-- 點擊圖片回到 index.html -->
+        <a href="index.html" style="display:block; width:100%;">
+            <img src="map.jpg" alt="手拉車見證架地點" class="map-image">
+        </a>
+    </div>
+</body>
+</html>
